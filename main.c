@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 	char oldPassword[17];
 	
 	printf("inserire le password da mettere\n");
-	scanf("%d",&n);//input per sapere quando password verrano inserite
+	scanf("%d",&n);//input per sapere quante password verrano inserite
 	for(i=0;i<n;i++){
 	
 	printf("inserire password nuova\n");
