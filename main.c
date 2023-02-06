@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 /*
+Named variable
+*/
+	
+	int i,j,n,maiusc=0,minu=0,lunghezza=1,numero=0,speciale=0,consecutivo=1,uguale=0,same=1;
+	char password[17];
+	char oldPassword[17];
+/*
 
 CHECK BEFORE THE FOR OF CHECKS
 
@@ -9,7 +16,7 @@ CHECK BEFORE THE FOR OF CHECKS
 
 void ControlloLunghezza(){
 	if(strlen(password)<8||strlen(password)>16)
-		int lunghezza =0;//it's not long correctly
+		lunghezza = 0;//it's not long correctly
 }
 
 /*
@@ -69,26 +76,17 @@ THE MAIN START
 
 */
 
-}
+
 int main(int argc, char *argv[]) {
+/*
+the program start with the firts request to the user
+*/
 	
-	/*
-	Named variable
-	*/
+printf("inserire le password da mettere\n");
+scanf("%d",&n);//input per sapere quante password verrano inserite
 	
-	int i,j,n,maiusc=0,minu=0,lunghezza=1,numero=0,speciale=0,consecutivo=1,uguale=0,same=1;
-	char password[17];
-	char oldPassword[17];
-	
-	/*
-	the program start with the firts request to the user
-	*/
-	
-	printf("inserire le password da mettere\n");
-	scanf("%d",&n);//input per sapere quante password verrano inserite
-	
-	//first for
-	for(i=0;i<n;i++){
+//first for
+for(i=0;i<n;i++){
 		
 	//asking to the user to put the new and old password
 	printf("inserire password nuova\n");
@@ -112,6 +110,6 @@ int main(int argc, char *argv[]) {
 	ControlloTraLeDuePassword();
 	//print the 1 or 0 in the console
 	RepilogoControlli();
-
-	return 0;
+	}
+return 0;
 }
