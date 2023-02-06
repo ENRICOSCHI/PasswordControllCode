@@ -6,8 +6,7 @@ Named variable
 */
 	
 int i,j,n,maiusc=0,minu=0,lunghezza=1,numero=0,speciale=0,consecutivo=1,uguale=0,same=1;
-char password[17];
-char oldPassword[17];
+char password[17], oldPassword[17];
 
 /*
 
