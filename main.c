@@ -38,7 +38,7 @@ void ControlloNumeri(){
 		numero =1;//there's at least a number
 }
 void ControlloCaratteriSpeciali(){
-	if(password[j]>0&&password[j]<48||password[j]>57&&password[j]<65||password[j]>90&&password[j]<97||password[j]>122&&password[j]<255)
+	if(password[j]>0&&password[j]<48||password[j]>57&&password[j]<65||password[j]>90&&password[j]<97||password[j]>122&&password[j]<256)
 		speciale=1;// there's a special character
 }
 void ControlloLettereConsecutive(){
