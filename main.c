@@ -6,7 +6,7 @@ Named variable
 */
 	
 int i,j,n,maiusc=0,minu=0,lunghezza=1,numero=0,speciale=0,consecutivo=1,uguale=0,same=1;
-char password[17], oldPassword[17];
+char password[17],oldPassword[17];
 
 /*
 
@@ -38,7 +38,7 @@ void ControlloNumeri(){
 		numero =1;//there's at least a number
 }
 void ControlloCaratteriSpeciali(){
-	if(password[j]>0&&password[j]<48||password[j]>57&&password[j]<65||password[j]>90&&password[j]<97||password[j]>122&&password[j]<256)
+	if(password[j]>0&&password[j]<48||password[j]>57&&password[j]<65||password[j]>90&&password[j]<97||password[j]>122&&password[j]<=255)
 		speciale=1;// there's a special character
 }
 void ControlloLettereConsecutive(){
@@ -111,5 +111,6 @@ for(i=0;i<n;i++){
 	//print the 1 or 0 in the console
 	RepilogoControlli();
 	}
+	
 return 0;
 }
